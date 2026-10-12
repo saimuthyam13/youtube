@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Clone</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg" alt="YouTube Logo" />
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search" id="searchInput" />
+            <button id="searchBtn">Search</button>
+        </div>
+        <div class="user-actions">
+            <button>Create</button>
+            <button>Notifications</button>
+            <button>Profile</button>
+        </div>
+    </header>
+    
+    <div class="container">
+        <aside class="sidebar">
+            <nav>
+                <ul>
+                    <li class="active">Home</li>
+                    <li>Shorts</li>
+                    <li>Subscriptions</li>
+                    <li>Library</li>
+                    <li>History</li>
+                </ul>
+            </nav>
+        </aside>
+        
+        <main class="content">
+            <div class="video-grid" id="videoGrid">
+                <!-- Videos will be loaded here -->
+            </div>
+        </main>
+    </div>
+    
+    <div id="videoModal" class="modal">
+        <div class="modal-content">
+            <button id="closeModal" class="close-btn">&times;</button>
+            <iframe id="videoPlayer" width="100%" height="500" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
